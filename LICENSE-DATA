@@ -1,19 +1,26 @@
-# NormDef-FR
+NormDef-FR Data License
 
-NormDef-FR is a manually validated dataset for extracting and validating normative definitions in French legal codes.
+The NormDef-FR dataset files, annotation metadata, derived experimental splits,
+and documentation are released under the Licence Ouverte 2.0 / Open Licence 2.0
+(Etalab).
 
-The first public release contains 693 gold definitions from 363 source articles, with article-level and candidate-validation benchmarks.
+Licence text:
+https://www.etalab.gouv.fr/licence-ouverte-open-licence/
 
-It includes gold annotations, metadata, train/dev/test splits, verified true negatives, baseline scripts, and experimental results.
+NormDef-FR is derived from publicly available French legal texts published on
+Légifrance. Users must comply with the applicable reuse terms for French public
+legal information.
 
-Main documentation:
-- `DATA_CARD.md`
-- `MODEL_CARD.md`
-- `ANNOTATION_GUIDELINES.md`
-- `ANNOTATION_GUIDELINES_FR.md`
+When reusing NormDef-FR, users should attribute:
 
-Experiments can be reproduced from `scripts/experiments/`.
+- NormDef-FR
+- the associated paper
+- the original source of French legal texts: Légifrance / DILA
 
-Code is released under the MIT License; data and documentation are released under the Licence Ouverte 2.0 / Open Licence 2.0 (Etalab).
+Recommended attribution:
 
-NormDef-FR is a research dataset and is not an official legal source or legal advice.
+“NormDef-FR 1.0.0, Tetereou et al., derived from French legal texts published
+on Légifrance / DILA, released under Licence Ouverte 2.0 (Etalab).”
+
+NormDef-FR is not an official legal source and does not provide legal advice.
+For legal use, users must consult the current official texts on Légifrance.
