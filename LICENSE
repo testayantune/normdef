@@ -1,0 +1,17 @@
+NormDef-FR licensing notice
+
+This repository contains both software code and dataset files.
+
+1. Code
+
+Unless otherwise stated, the source code in this repository is released under the MIT License.
+
+2. Data
+
+Unless otherwise stated, the NormDef-FR dataset files, annotation metadata, derived experimental splits, and documentation are released under the French Open Licence 2.0 / Licence Ouverte 2.0 (Etalab).
+
+NormDef-FR is derived from publicly available French legal texts published on Légifrance. Users must comply with the applicable terms of reuse for French public legal information and must cite the original public source when reusing the data.
+
+3. No legal advice
+
+NormDef-FR is a research dataset. It is not an official legal source and must not be used as a substitute for the current official legal texts available on Légifrance.

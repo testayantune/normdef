@@ -1,0 +1,124 @@
+{
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\term_definition_extraction\\test.jsonl",
+  "output_predictions": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\results\\rule_based_extraction_predictions.jsonl",
+  "overall": {
+    "n": 96,
+    "term_exact_match": 0.6354166666666666,
+    "definition_exact_match": 0.8645833333333334,
+    "both_exact_match": 0.6041666666666666,
+    "term_token_f1": 0.9021399293138422,
+    "definition_token_f1": 0.9609059195837285,
+    "no_prediction_rate": 0.010416666666666666
+  },
+  "by_coarse_pattern": {
+    "colon_definition": {
+      "n": 49,
+      "term_exact_match": 0.9591836734693877,
+      "definition_exact_match": 0.9795918367346939,
+      "both_exact_match": 0.9591836734693877,
+      "term_token_f1": 0.9918367346938775,
+      "definition_token_f1": 0.9881847475832438,
+      "no_prediction_rate": 0.0
+    },
+    "defini_comme": {
+      "n": 7,
+      "term_exact_match": 0.0,
+      "definition_exact_match": 0.7142857142857143,
+      "both_exact_match": 0.0,
+      "term_token_f1": 0.8049886621315192,
+      "definition_token_f1": 0.9947755102040816,
+      "no_prediction_rate": 0.0
+    },
+    "on_entend_par": {
+      "n": 10,
+      "term_exact_match": 0.5,
+      "definition_exact_match": 0.2,
+      "both_exact_match": 0.2,
+      "term_token_f1": 0.7137373737373738,
+      "definition_token_f1": 0.82624870770304,
+      "no_prediction_rate": 0.0
+    },
+    "qualification": {
+      "n": 1,
+      "term_exact_match": 0.0,
+      "definition_exact_match": 0.0,
+      "both_exact_match": 0.0,
+      "term_token_f1": 0.0,
+      "definition_token_f1": 0.0,
+      "no_prediction_rate": 1.0
+    },
+    "sentend_de": {
+      "n": 29,
+      "term_exact_match": 0.3103448275862069,
+      "definition_exact_match": 0.9655172413793104,
+      "both_exact_match": 0.3103448275862069,
+      "term_token_f1": 0.8701082359253276,
+      "definition_token_f1": 0.9862068965517242,
+      "no_prediction_rate": 0.0
+    }
+  },
+  "by_matched_rule": {
+    "colon_definition": {
+      "n": 51,
+      "term_exact_match": 0.9215686274509803,
+      "definition_exact_match": 0.9607843137254902,
+      "both_exact_match": 0.9215686274509803,
+      "term_token_f1": 0.9784219001610305,
+      "definition_token_f1": 0.9808049535603715,
+      "no_prediction_rate": 0.0
+    },
+    "defini_comme": {
+      "n": 6,
+      "term_exact_match": 0.0,
+      "definition_exact_match": 0.6666666666666666,
+      "both_exact_match": 0.0,
+      "term_token_f1": 0.8095238095238094,
+      "definition_token_f1": 0.993904761904762,
+      "no_prediction_rate": 0.0
+    },
+    "no_rule": {
+      "n": 1,
+      "term_exact_match": 0.0,
+      "definition_exact_match": 0.0,
+      "both_exact_match": 0.0,
+      "term_token_f1": 0.0,
+      "definition_token_f1": 0.0,
+      "no_prediction_rate": 1.0
+    },
+    "on_entend_par": {
+      "n": 10,
+      "term_exact_match": 0.5,
+      "definition_exact_match": 0.2,
+      "both_exact_match": 0.2,
+      "term_token_f1": 0.7137373737373738,
+      "definition_token_f1": 0.82624870770304,
+      "no_prediction_rate": 0.0
+    },
+    "sentend_de": {
+      "n": 28,
+      "term_exact_match": 0.32142857142857145,
+      "definition_exact_match": 1.0,
+      "both_exact_match": 0.32142857142857145,
+      "term_token_f1": 0.882549989692847,
+      "definition_token_f1": 1.0,
+      "no_prediction_rate": 0.0
+    }
+  },
+  "counts": {
+    "test_examples": 96,
+    "matched_rule_distribution": {
+      "colon_definition": 51,
+      "sentend_de": 28,
+      "on_entend_par": 10,
+      "defini_comme": 6,
+      "no_rule": 1
+    },
+    "coarse_pattern_distribution": {
+      "colon_definition": 49,
+      "sentend_de": 29,
+      "on_entend_par": 10,
+      "defini_comme": 7,
+      "qualification": 1
+    }
+  }
+}

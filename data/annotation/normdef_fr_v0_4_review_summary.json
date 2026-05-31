@@ -1,0 +1,69 @@
+{
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\annotation\\annotation_batch_v0_4_reviewed.jsonl",
+  "output_gold": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\annotation\\normdef_fr_v0_4_gold_from_review.jsonl",
+  "output_rejected": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\annotation\\normdef_fr_v0_4_rejected_from_review.jsonl",
+  "total_rows_read": 77,
+  "total_reviewed_rows": 77,
+  "gold_rows": 52,
+  "rejected_rows": 25,
+  "skipped_or_missing_label_rows": 0,
+  "manual_label_distribution": {
+    "partial": 28,
+    "invalid": 25,
+    "valid_definition": 24
+  },
+  "precision_valid_plus_partial": 0.6753246753246753,
+  "precision_valid_only": 0.3116883116883117,
+  "gold_pattern_distribution": {
+    "défini comme": 11,
+    "terme_colon_definition": 20,
+    "s'entend de": 16,
+    "on entend par": 5
+  },
+  "gold_definition_type_distribution": {
+    "explicit": 52
+  },
+  "gold_source_code_distribution": {
+    "Code des postes et des communications électroniques": 1,
+    "Code de la construction et de l'habitation": 3,
+    "Code des relations entre le public et l'administration": 2,
+    "Code des impositions sur les biens et services": 1,
+    "Code des communes de la Nouvelle-Calédonie": 2,
+    "Code de la santé publique": 6,
+    "Code général des impôts": 8,
+    "Code de l'énergie": 1,
+    "Code rural (nouveau)": 10,
+    "Code de la sécurité intérieure": 1,
+    "Code de l'environnement": 3,
+    "Code des transports": 2,
+    "Code de la défense": 1,
+    "Code monétaire et financier": 4,
+    "Code du cinéma et de l'image animée": 1,
+    "Code général des impôts, annexe II": 2,
+    "Code de procédure civile": 1,
+    "Code de la consommation": 2,
+    "Code de l'action sociale et des familles": 1
+  },
+  "rejected_pattern_distribution": {
+    "s'entend de": 8,
+    "terme_colon_definition": 8,
+    "est considéré comme": 3,
+    "défini comme": 6
+  },
+  "rejected_source_code_distribution": {
+    "Code de la justice pénale des mineurs": 1,
+    "Code général des impôts, annexe III": 3,
+    "Code des procédures civiles d'exécution": 1,
+    "Code de la route": 4,
+    "Code général des impôts": 5,
+    "Code des impositions sur les biens et services": 2,
+    "Code de la sécurité sociale": 1,
+    "Code de l'énergie": 1,
+    "Code du cinéma et de l'image animée": 1,
+    "Code général de la propriété des personnes publiques": 2,
+    "Code rural (nouveau)": 1,
+    "Code monétaire et financier": 1,
+    "Code du sport": 1,
+    "Code général des impôts, annexe IV": 1
+  }
+}

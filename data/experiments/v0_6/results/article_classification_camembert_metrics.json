@@ -1,0 +1,136 @@
+{
+  "task": "article_definition_detection",
+  "model": "camembert-base",
+  "train_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\article_classification\\train.jsonl",
+  "dev_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\article_classification\\dev.jsonl",
+  "test_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\article_classification\\test.jsonl",
+  "model_output_dir": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\models\\camembert_article_classification",
+  "hyperparameters": {
+    "max_length": 256,
+    "num_epochs": 5,
+    "learning_rate": 2e-05,
+    "train_batch_size": 8,
+    "eval_batch_size": 16,
+    "weight_decay": 0.01,
+    "random_seed": 2026
+  },
+  "dev": {
+    "accuracy": 0.9831932773109243,
+    "macro_f1": 0.983048433048433,
+    "definition_f1": 0.9814814814814815,
+    "non_definition_f1": 0.9846153846153847,
+    "labels": {
+      "0_non_definition": {
+        "precision": 0.9846153846153847,
+        "recall": 0.9846153846153847,
+        "f1": 0.9846153846153847,
+        "support": 65
+      },
+      "1_definition": {
+        "precision": 0.9814814814814815,
+        "recall": 0.9814814814814815,
+        "f1": 0.9814814814814815,
+        "support": 54
+      }
+    },
+    "confusion_matrix": [
+      [
+        64,
+        1
+      ],
+      [
+        1,
+        53
+      ]
+    ],
+    "classification_report": {
+      "non_definition": {
+        "precision": 0.9846153846153847,
+        "recall": 0.9846153846153847,
+        "f1-score": 0.9846153846153847,
+        "support": 65.0
+      },
+      "definition": {
+        "precision": 0.9814814814814815,
+        "recall": 0.9814814814814815,
+        "f1-score": 0.9814814814814815,
+        "support": 54.0
+      },
+      "accuracy": 0.9831932773109243,
+      "macro avg": {
+        "precision": 0.983048433048433,
+        "recall": 0.983048433048433,
+        "f1-score": 0.983048433048433,
+        "support": 119.0
+      },
+      "weighted avg": {
+        "precision": 0.9831932773109243,
+        "recall": 0.9831932773109243,
+        "f1-score": 0.9831932773109243,
+        "support": 119.0
+      }
+    }
+  },
+  "test": {
+    "accuracy": 0.9752066115702479,
+    "macro_f1": 0.9750361048070972,
+    "definition_f1": 0.972972972972973,
+    "non_definition_f1": 0.9770992366412213,
+    "labels": {
+      "0_non_definition": {
+        "precision": 0.9846153846153847,
+        "recall": 0.9696969696969697,
+        "f1": 0.9770992366412213,
+        "support": 66
+      },
+      "1_definition": {
+        "precision": 0.9642857142857143,
+        "recall": 0.9818181818181818,
+        "f1": 0.972972972972973,
+        "support": 55
+      }
+    },
+    "confusion_matrix": [
+      [
+        64,
+        2
+      ],
+      [
+        1,
+        54
+      ]
+    ],
+    "classification_report": {
+      "non_definition": {
+        "precision": 0.9846153846153847,
+        "recall": 0.9696969696969697,
+        "f1-score": 0.9770992366412213,
+        "support": 66.0
+      },
+      "definition": {
+        "precision": 0.9642857142857143,
+        "recall": 0.9818181818181818,
+        "f1-score": 0.972972972972973,
+        "support": 55.0
+      },
+      "accuracy": 0.9752066115702479,
+      "macro avg": {
+        "precision": 0.9744505494505495,
+        "recall": 0.9757575757575758,
+        "f1-score": 0.9750361048070972,
+        "support": 121.0
+      },
+      "weighted avg": {
+        "precision": 0.9753746253746253,
+        "recall": 0.9752066115702479,
+        "f1-score": 0.975223662246563,
+        "support": 121.0
+      }
+    }
+  },
+  "notes": [
+    "Definition article = article represented in the NormDef-FR gold set.",
+    "Non-definition article = weak negative from low_clean candidate articles not represented in the gold set.",
+    "The negative class should therefore be interpreted as weakly supervised."
+  ]
+}

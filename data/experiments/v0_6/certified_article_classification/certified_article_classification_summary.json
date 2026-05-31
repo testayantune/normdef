@@ -1,0 +1,117 @@
+{
+  "version": "v0.6",
+  "task": "article_definition_detection_certified",
+  "input_positive_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\normdef_v0_6_article_classification.jsonl",
+  "input_true_negative_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\candidates\\candidate_true_negative.jsonl",
+  "output_dataset": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\certified_article_classification\\article_classification_certified.jsonl",
+  "random_seed": 2026,
+  "counts": {
+    "original_article_rows_read": 798,
+    "true_negative_rows_read": 300,
+    "certified_negatives_kept": 300,
+    "gold_positives_sampled": 300,
+    "total_dataset_rows": 600,
+    "train": 420,
+    "dev": 90,
+    "test": 90
+  },
+  "label_distribution": {
+    "all": {
+      "1": 300,
+      "0": 300
+    },
+    "train": {
+      "0": 210,
+      "1": 210
+    },
+    "dev": {
+      "0": 45,
+      "1": 45
+    },
+    "test": {
+      "0": 45,
+      "1": 45
+    }
+  },
+  "source_code_distribution_top30": {
+    "all": {
+      "Code de commerce": 297,
+      "Code des impositions sur les biens et services": 42,
+      "Code général des impôts": 35,
+      "Code de l'environnement": 20,
+      "Code rural (nouveau)": 18,
+      "Code des transports": 15,
+      "Code de la santé publique": 15,
+      "Code général des impôts, annexe III": 13,
+      "Code de l'énergie": 11,
+      "Code de la construction et de l'habitation": 11,
+      "Code du travail": 10,
+      "Code monétaire et financier": 9,
+      "Code du cinéma et de l'image animée": 8,
+      "Code de la consommation": 8,
+      "Code pénitentiaire": 8,
+      "Code général des impôts, annexe II": 7,
+      "Code de la défense": 6,
+      "Code de la sécurité sociale": 6,
+      "Code général des collectivités territoriales": 6,
+      "Code de la propriété intellectuelle": 5,
+      "Code du sport": 4,
+      "Code des assurances": 4,
+      "Code de la sécurité intérieure": 3,
+      "Code de l'urbanisme": 3,
+      "Code des postes et des communications électroniques": 3,
+      "Code de l'action sociale et des familles": 3,
+      "Code de l'entrée et du séjour des étrangers et du droit d'asile": 3,
+      "Code des relations entre le public et l'administration": 3,
+      "Code des communes de la Nouvelle-Calédonie": 2,
+      "Code de la voirie routière": 2
+    },
+    "positive": {
+      "Code des impositions sur les biens et services": 42,
+      "Code général des impôts": 35,
+      "Code de l'environnement": 20,
+      "Code rural (nouveau)": 18,
+      "Code de la santé publique": 15,
+      "Code des transports": 15,
+      "Code général des impôts, annexe III": 13,
+      "Code de l'énergie": 11,
+      "Code de la construction et de l'habitation": 11,
+      "Code du travail": 10,
+      "Code monétaire et financier": 9,
+      "Code de la consommation": 8,
+      "Code du cinéma et de l'image animée": 8,
+      "Code général des impôts, annexe II": 7,
+      "Code de la sécurité sociale": 6,
+      "Code de la défense": 6,
+      "Code général des collectivités territoriales": 6,
+      "Code de la propriété intellectuelle": 5,
+      "Code de commerce": 5,
+      "Code du sport": 4,
+      "Code des assurances": 4,
+      "Code de la sécurité intérieure": 3,
+      "Code des relations entre le public et l'administration": 3,
+      "Code de l'action sociale et des familles": 3,
+      "Code de l'urbanisme": 3,
+      "Code de l'entrée et du séjour des étrangers et du droit d'asile": 3,
+      "Code des postes et des communications électroniques": 3,
+      "Code de la voirie routière": 2,
+      "Code des communes de la Nouvelle-Calédonie": 2,
+      "Code de la route": 2
+    },
+    "negative": {
+      "Code de commerce": 292,
+      "Code pénitentiaire": 8
+    }
+  },
+  "article_overlap": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  },
+  "notes": [
+    "This dataset replaces weak negatives with certified/proposed true negatives.",
+    "The final dataset is balanced by sampling the same number of positive articles as certified negatives.",
+    "Splits are grouped by article_key to reduce leakage.",
+    "If certification is only model-assisted, report negatives as certified or manually verified according to the actual validation protocol."
+  ]
+}

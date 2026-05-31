@@ -1,0 +1,76 @@
+{
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\annotation\\annotation_batch_v0_6_reviewed.jsonl",
+  "output_gold": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\annotation\\normdef_fr_v0_6_gold_from_review.jsonl",
+  "output_rejected": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\annotation\\normdef_fr_v0_6_rejected_from_review.jsonl",
+  "total_rows_read": 172,
+  "total_reviewed_rows": 172,
+  "gold_rows": 100,
+  "rejected_rows": 72,
+  "skipped_or_missing_label_rows": 0,
+  "manual_label_distribution": {
+    "valid_definition": 62,
+    "invalid": 72,
+    "partial": 38
+  },
+  "precision_valid_plus_partial": 0.5813953488372093,
+  "precision_valid_only": 0.36046511627906974,
+  "gold_pattern_distribution": {
+    "on entend par": 11,
+    "s'entend de": 56,
+    "terme_colon_definition": 20,
+    "défini comme": 13
+  },
+  "gold_definition_type_distribution": {
+    "explicit": 100
+  },
+  "gold_source_code_distribution": {
+    "Code de la santé publique": 7,
+    "Code de commerce": 1,
+    "Code rural (nouveau)": 9,
+    "Code des transports": 10,
+    "Code de l'environnement": 7,
+    "Code des impositions sur les biens et services": 20,
+    "Code de la défense": 4,
+    "Code général des impôts": 17,
+    "Code de la construction et de l'habitation": 2,
+    "Code général des impôts, annexe III": 1,
+    "Code de l'éducation": 1,
+    "Code de la propriété intellectuelle": 1,
+    "Code du travail": 4,
+    "Code général des collectivités territoriales": 3,
+    "Code de l'action sociale et des familles": 1,
+    "Code de la sécurité sociale": 5,
+    "Code des assurances": 1,
+    "Code de l'énergie": 1,
+    "Code du service national": 1,
+    "Code de la sécurité intérieure": 1,
+    "Code monétaire et financier": 3
+  },
+  "rejected_pattern_distribution": {
+    "terme_colon_definition": 56,
+    "sont considérés comme": 3,
+    "s'entend de": 2,
+    "défini comme": 6,
+    "est considéré comme": 5
+  },
+  "rejected_source_code_distribution": {
+    "Code de l'environnement": 2,
+    "Code de la propriété intellectuelle": 3,
+    "Code de l'énergie": 1,
+    "Code général des impôts, annexe III": 5,
+    "Code de la sécurité intérieure": 4,
+    "Code de la sécurité sociale": 4,
+    "Code général des impôts": 2,
+    "Code de la défense": 1,
+    "Code monétaire et financier": 6,
+    "Code du travail": 6,
+    "Code des assurances": 2,
+    "Code de l'action sociale et des familles": 2,
+    "Code rural (nouveau)": 5,
+    "Code de commerce": 15,
+    "Code de la santé publique": 8,
+    "Code des transports": 4,
+    "Code général des collectivités territoriales": 1,
+    "Code de l'éducation": 1
+  }
+}

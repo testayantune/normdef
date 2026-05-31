@@ -1,0 +1,41 @@
+{
+  "dataset": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\certified_article_classification\\article_classification_certified.jsonl",
+  "splits": {
+    "train": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\certified_article_classification\\splits\\train.jsonl",
+    "dev": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\certified_article_classification\\splits\\dev.jsonl",
+    "test": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\certified_article_classification\\splits\\test.jsonl"
+  },
+  "counts": {
+    "original_article_rows_read": 798,
+    "true_negative_rows_read": 300,
+    "certified_negatives_kept": 300,
+    "gold_positives_sampled": 300,
+    "total_dataset_rows": 600,
+    "train": 420,
+    "dev": 90,
+    "test": 90
+  },
+  "label_distribution": {
+    "all": {
+      "1": 300,
+      "0": 300
+    },
+    "train": {
+      "0": 210,
+      "1": 210
+    },
+    "dev": {
+      "0": 45,
+      "1": 45
+    },
+    "test": {
+      "0": 45,
+      "1": 45
+    }
+  },
+  "article_overlap": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  }
+}

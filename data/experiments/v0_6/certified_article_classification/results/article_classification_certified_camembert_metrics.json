@@ -1,0 +1,136 @@
+{
+  "task": "article_definition_detection_certified",
+  "model": "camembert-base",
+  "train_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\certified_article_classification\\splits\\train.jsonl",
+  "dev_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\certified_article_classification\\splits\\dev.jsonl",
+  "test_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\certified_article_classification\\splits\\test.jsonl",
+  "model_output_dir": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\certified_article_classification\\models\\camembert_article_classification",
+  "hyperparameters": {
+    "max_length": 256,
+    "num_epochs": 5,
+    "learning_rate": 2e-05,
+    "train_batch_size": 8,
+    "eval_batch_size": 16,
+    "weight_decay": 0.01,
+    "random_seed": 2026
+  },
+  "dev": {
+    "accuracy": 0.9888888888888889,
+    "macro_f1": 0.9888875169774046,
+    "definition_f1": 0.9887640449438202,
+    "true_negative_f1": 0.989010989010989,
+    "labels": {
+      "0_certified_true_negative": {
+        "precision": 0.9782608695652174,
+        "recall": 1.0,
+        "f1": 0.989010989010989,
+        "support": 45
+      },
+      "1_definition_article": {
+        "precision": 1.0,
+        "recall": 0.9777777777777777,
+        "f1": 0.9887640449438202,
+        "support": 45
+      }
+    },
+    "confusion_matrix": [
+      [
+        45,
+        0
+      ],
+      [
+        1,
+        44
+      ]
+    ],
+    "classification_report": {
+      "certified_true_negative": {
+        "precision": 0.9782608695652174,
+        "recall": 1.0,
+        "f1-score": 0.989010989010989,
+        "support": 45.0
+      },
+      "definition_article": {
+        "precision": 1.0,
+        "recall": 0.9777777777777777,
+        "f1-score": 0.9887640449438202,
+        "support": 45.0
+      },
+      "accuracy": 0.9888888888888889,
+      "macro avg": {
+        "precision": 0.9891304347826086,
+        "recall": 0.9888888888888889,
+        "f1-score": 0.9888875169774046,
+        "support": 90.0
+      },
+      "weighted avg": {
+        "precision": 0.9891304347826086,
+        "recall": 0.9888888888888889,
+        "f1-score": 0.9888875169774047,
+        "support": 90.0
+      }
+    }
+  },
+  "test": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "definition_f1": 1.0,
+    "true_negative_f1": 1.0,
+    "labels": {
+      "0_certified_true_negative": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 45
+      },
+      "1_definition_article": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 45
+      }
+    },
+    "confusion_matrix": [
+      [
+        45,
+        0
+      ],
+      [
+        0,
+        45
+      ]
+    ],
+    "classification_report": {
+      "certified_true_negative": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 45.0
+      },
+      "definition_article": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 45.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 90.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 90.0
+      }
+    }
+  },
+  "notes": [
+    "Certified setting: positives are gold definition-bearing articles; negatives are certified true negatives.",
+    "Dataset is balanced and split by article_key.",
+    "Report separately from the weak-negative article classification setting."
+  ]
+}

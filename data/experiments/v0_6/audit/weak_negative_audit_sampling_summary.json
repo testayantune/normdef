@@ -1,0 +1,27 @@
+{
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\normdef_v0_6_article_classification.jsonl",
+  "output_jsonl": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\audit\\weak_negative_audit_sample_100.jsonl",
+  "output_csv": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\audit\\weak_negative_audit_sample_100.csv",
+  "random_seed": 2026,
+  "requested_sample_size": 100,
+  "total_rows_read": 798,
+  "total_weak_negatives_available": 435,
+  "sampled_weak_negatives": 100,
+  "source_code_distribution_in_sample": {
+    "Code général des impôts": 55,
+    "Code de commerce": 24,
+    "Code général des impôts, annexe II": 9,
+    "Code général des impôts, annexe IV": 6,
+    "Code de la consommation": 6
+  },
+  "manual_label_schema": {
+    "true_negative": "No normative definition found in the article.",
+    "contaminated_negative": "The article actually contains a normative definition.",
+    "uncertain": "Ambiguous case requiring discussion."
+  },
+  "instructions": [
+    "Fill audit_label with one of: true_negative, contaminated_negative, uncertain.",
+    "Use audit_notes for short justification when contaminated_negative or uncertain.",
+    "After annotation, run summarize_weak_negative_audit.py."
+  ]
+}

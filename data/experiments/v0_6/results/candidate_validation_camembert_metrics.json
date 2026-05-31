@@ -1,0 +1,137 @@
+{
+  "task": "candidate_validation",
+  "model": "camembert-base",
+  "train_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\candidate_validation\\train.jsonl",
+  "dev_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\candidate_validation\\dev.jsonl",
+  "test_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\candidate_validation\\test.jsonl",
+  "model_output_dir": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\models\\camembert_candidate_validation",
+  "hyperparameters": {
+    "max_length": 256,
+    "num_epochs": 8,
+    "learning_rate": 2e-05,
+    "train_batch_size": 8,
+    "eval_batch_size": 16,
+    "weight_decay": 0.01,
+    "random_seed": 2026
+  },
+  "dev": {
+    "accuracy": 0.9240506329113924,
+    "macro_f1": 0.9239409499358151,
+    "accepted_f1": 0.926829268292683,
+    "invalid_f1": 0.9210526315789473,
+    "labels": {
+      "0_invalid": {
+        "precision": 0.9459459459459459,
+        "recall": 0.8974358974358975,
+        "f1": 0.9210526315789473,
+        "support": 39
+      },
+      "1_accepted": {
+        "precision": 0.9047619047619048,
+        "recall": 0.95,
+        "f1": 0.926829268292683,
+        "support": 40
+      }
+    },
+    "confusion_matrix": [
+      [
+        35,
+        4
+      ],
+      [
+        2,
+        38
+      ]
+    ],
+    "classification_report": {
+      "invalid": {
+        "precision": 0.9459459459459459,
+        "recall": 0.8974358974358975,
+        "f1-score": 0.9210526315789473,
+        "support": 39.0
+      },
+      "accepted": {
+        "precision": 0.9047619047619048,
+        "recall": 0.95,
+        "f1-score": 0.926829268292683,
+        "support": 40.0
+      },
+      "accuracy": 0.9240506329113924,
+      "macro avg": {
+        "precision": 0.9253539253539254,
+        "recall": 0.9237179487179488,
+        "f1-score": 0.9239409499358151,
+        "support": 79.0
+      },
+      "weighted avg": {
+        "precision": 0.9250932668654187,
+        "recall": 0.9240506329113924,
+        "f1-score": 0.9239775109276742,
+        "support": 79.0
+      }
+    }
+  },
+  "test": {
+    "accuracy": 0.7916666666666666,
+    "macro_f1": 0.7051597051597052,
+    "accepted_f1": 0.8648648648648649,
+    "invalid_f1": 0.5454545454545454,
+    "labels": {
+      "0_invalid": {
+        "precision": 0.6,
+        "recall": 0.5,
+        "f1": 0.5454545454545454,
+        "support": 12
+      },
+      "1_accepted": {
+        "precision": 0.8421052631578947,
+        "recall": 0.8888888888888888,
+        "f1": 0.8648648648648649,
+        "support": 36
+      }
+    },
+    "confusion_matrix": [
+      [
+        6,
+        6
+      ],
+      [
+        4,
+        32
+      ]
+    ],
+    "classification_report": {
+      "invalid": {
+        "precision": 0.6,
+        "recall": 0.5,
+        "f1-score": 0.5454545454545454,
+        "support": 12.0
+      },
+      "accepted": {
+        "precision": 0.8421052631578947,
+        "recall": 0.8888888888888888,
+        "f1-score": 0.8648648648648649,
+        "support": 36.0
+      },
+      "accuracy": 0.7916666666666666,
+      "macro avg": {
+        "precision": 0.7210526315789474,
+        "recall": 0.6944444444444444,
+        "f1-score": 0.7051597051597052,
+        "support": 48.0
+      },
+      "weighted avg": {
+        "precision": 0.781578947368421,
+        "recall": 0.7916666666666666,
+        "f1-score": 0.785012285012285,
+        "support": 48.0
+      }
+    }
+  },
+  "notes": [
+    "Accepted means valid_definition or partial.",
+    "Invalid means manually rejected candidate.",
+    "The test split is small and imbalanced; macro-F1 and invalid-F1 should be reported.",
+    "TrainingArguments were filtered dynamically for local transformers compatibility."
+  ]
+}

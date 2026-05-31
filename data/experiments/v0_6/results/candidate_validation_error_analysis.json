@@ -1,0 +1,72 @@
+{
+  "model": "tfidf_word_logreg",
+  "split": "test",
+  "input_predictions": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\results\\candidate_validation_tfidf_predictions.jsonl",
+  "counts": {
+    "selected_predictions": 48,
+    "errors_total": 8,
+    "false_positives_invalid_predicted_accepted": 6,
+    "false_negatives_accepted_predicted_invalid": 2,
+    "correct": 40
+  },
+  "error_rate": 0.16666666666666666,
+  "false_positive_distribution": {
+    "pattern": {
+      "terme_colon_definition": 3,
+      "défini comme": 2,
+      "est considéré comme": 1
+    },
+    "source_code": {
+      "Code des impositions sur les biens et services": 1,
+      "Code de la sécurité sociale": 1,
+      "Code de la défense": 1,
+      "Code de l'environnement": 1,
+      "Code général des impôts": 1,
+      "Code de commerce": 1
+    },
+    "manual_label": {
+      "invalid": 6
+    }
+  },
+  "false_negative_distribution": {
+    "pattern": {
+      "défini comme": 1,
+      "terme_colon_definition": 1
+    },
+    "source_code": {
+      "Code général de la fonction publique": 1,
+      "Code de la sécurité intérieure": 1
+    },
+    "manual_label": {
+      "partial": 1,
+      "valid_definition": 1
+    }
+  },
+  "all_error_distribution": {
+    "pattern": {
+      "terme_colon_definition": 4,
+      "défini comme": 3,
+      "est considéré comme": 1
+    },
+    "source_code": {
+      "Code des impositions sur les biens et services": 1,
+      "Code général de la fonction publique": 1,
+      "Code de la sécurité sociale": 1,
+      "Code de la défense": 1,
+      "Code de l'environnement": 1,
+      "Code de la sécurité intérieure": 1,
+      "Code général des impôts": 1,
+      "Code de commerce": 1
+    },
+    "manual_label": {
+      "invalid": 6,
+      "partial": 1,
+      "valid_definition": 1
+    }
+  },
+  "interpretation_notes": [
+    "False positives are invalid candidates predicted as accepted; they are dangerous because they would add noise to an automatically expanded dataset.",
+    "False negatives are accepted candidates predicted as invalid; they reduce recall but are less harmful for high-precision dataset construction.",
+    "Manual qualitative review should prioritize false positives."
+  ]
+}

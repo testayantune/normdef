@@ -1,0 +1,810 @@
+{
+  "task": "candidate_validation",
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\normdef_v0_6_candidate_validation.jsonl",
+  "n_folds": 5,
+  "random_seed": 2026,
+  "label_mapping": {
+    "0": "invalid",
+    "1": "accepted"
+  },
+  "models": {
+    "tfidf_word_logreg": {
+      "folds": [
+        {
+          "accuracy": 0.7777777777777778,
+          "macro_f1": 0.6991978609625669,
+          "accepted_f1": 0.8529411764705882,
+          "invalid_f1": 0.5454545454545454,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.7058823529411765,
+              "recall": 0.4444444444444444,
+              "f1": 0.5454545454545454,
+              "support": 27
+            },
+            "1_accepted": {
+              "precision": 0.7945205479452054,
+              "recall": 0.9206349206349206,
+              "f1": 0.8529411764705882,
+              "support": 63
+            }
+          },
+          "confusion_matrix": [
+            [
+              12,
+              15
+            ],
+            [
+              5,
+              58
+            ]
+          ],
+          "fold": 1,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 243,
+            "0": 116
+          },
+          "test_label_distribution": {
+            "1": 63,
+            "0": 27
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.8,
+          "macro_f1": 0.7507692307692309,
+          "accepted_f1": 0.8615384615384616,
+          "invalid_f1": 0.64,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.7619047619047619,
+              "recall": 0.5517241379310345,
+              "f1": 0.64,
+              "support": 29
+            },
+            "1_accepted": {
+              "precision": 0.8115942028985508,
+              "recall": 0.9180327868852459,
+              "f1": 0.8615384615384616,
+              "support": 61
+            }
+          },
+          "confusion_matrix": [
+            [
+              16,
+              13
+            ],
+            [
+              5,
+              56
+            ]
+          ],
+          "fold": 2,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 245,
+            "0": 114
+          },
+          "test_label_distribution": {
+            "1": 61,
+            "0": 29
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7444444444444445,
+          "macro_f1": 0.6592592592592592,
+          "accepted_f1": 0.8296296296296296,
+          "invalid_f1": 0.4888888888888889,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.6470588235294118,
+              "recall": 0.39285714285714285,
+              "f1": 0.4888888888888889,
+              "support": 28
+            },
+            "1_accepted": {
+              "precision": 0.7671232876712328,
+              "recall": 0.9032258064516129,
+              "f1": 0.8296296296296296,
+              "support": 62
+            }
+          },
+          "confusion_matrix": [
+            [
+              11,
+              17
+            ],
+            [
+              6,
+              56
+            ]
+          ],
+          "fold": 3,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 244,
+            "0": 115
+          },
+          "test_label_distribution": {
+            "1": 62,
+            "0": 28
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7888888888888889,
+          "macro_f1": 0.7097267017484298,
+          "accepted_f1": 0.8613138686131386,
+          "invalid_f1": 0.5581395348837209,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.8,
+              "recall": 0.42857142857142855,
+              "f1": 0.5581395348837209,
+              "support": 28
+            },
+            "1_accepted": {
+              "precision": 0.7866666666666666,
+              "recall": 0.9516129032258065,
+              "f1": 0.8613138686131386,
+              "support": 62
+            }
+          },
+          "confusion_matrix": [
+            [
+              12,
+              16
+            ],
+            [
+              3,
+              59
+            ]
+          ],
+          "fold": 4,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 244,
+            "0": 115
+          },
+          "test_label_distribution": {
+            "1": 62,
+            "0": 28
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7640449438202247,
+          "macro_f1": 0.7043189368770764,
+          "accepted_f1": 0.8372093023255814,
+          "invalid_f1": 0.5714285714285714,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.7777777777777778,
+              "recall": 0.45161290322580644,
+              "f1": 0.5714285714285714,
+              "support": 31
+            },
+            "1_accepted": {
+              "precision": 0.7605633802816901,
+              "recall": 0.9310344827586207,
+              "f1": 0.8372093023255814,
+              "support": 58
+            }
+          },
+          "confusion_matrix": [
+            [
+              14,
+              17
+            ],
+            [
+              4,
+              54
+            ]
+          ],
+          "fold": 5,
+          "train_size": 360,
+          "test_size": 89,
+          "train_label_distribution": {
+            "1": 248,
+            "0": 112
+          },
+          "test_label_distribution": {
+            "1": 58,
+            "0": 31
+          },
+          "article_key_overlap_train_test": 0
+        }
+      ],
+      "aggregate": {
+        "accuracy": {
+          "mean": 0.7750312109862671,
+          "std": 0.021675260347530857,
+          "min": 0.7444444444444445,
+          "max": 0.8
+        },
+        "macro_f1": {
+          "mean": 0.7046543979233126,
+          "std": 0.03256881567752902,
+          "min": 0.6592592592592592,
+          "max": 0.7507692307692309
+        },
+        "accepted_f1": {
+          "mean": 0.8485264877154799,
+          "std": 0.014469692295124528,
+          "min": 0.8296296296296296,
+          "max": 0.8615384615384616
+        },
+        "invalid_f1": {
+          "mean": 0.5607823081311454,
+          "std": 0.05431246154584887,
+          "min": 0.4888888888888889,
+          "max": 0.64
+        },
+        "invalid_precision": {
+          "mean": 0.7385247432306256,
+          "std": 0.06184289227514552,
+          "min": 0.6470588235294118,
+          "max": 0.8
+        },
+        "invalid_recall": {
+          "mean": 0.45384201140597136,
+          "std": 0.05922826696320581,
+          "min": 0.39285714285714285,
+          "max": 0.5517241379310345
+        },
+        "accepted_precision": {
+          "mean": 0.7840936170926691,
+          "std": 0.02069594051881491,
+          "min": 0.7605633802816901,
+          "max": 0.8115942028985508
+        },
+        "accepted_recall": {
+          "mean": 0.9249081799912413,
+          "std": 0.017932727949427105,
+          "min": 0.9032258064516129,
+          "max": 0.9516129032258065
+        }
+      }
+    },
+    "tfidf_word_linear_svm": {
+      "folds": [
+        {
+          "accuracy": 0.7888888888888889,
+          "macro_f1": 0.7264437689969605,
+          "accepted_f1": 0.8571428571428571,
+          "invalid_f1": 0.5957446808510638,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.7,
+              "recall": 0.5185185185185185,
+              "f1": 0.5957446808510638,
+              "support": 27
+            },
+            "1_accepted": {
+              "precision": 0.8142857142857143,
+              "recall": 0.9047619047619048,
+              "f1": 0.8571428571428571,
+              "support": 63
+            }
+          },
+          "confusion_matrix": [
+            [
+              14,
+              13
+            ],
+            [
+              6,
+              57
+            ]
+          ],
+          "fold": 1,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 243,
+            "0": 116
+          },
+          "test_label_distribution": {
+            "1": 63,
+            "0": 27
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7777777777777778,
+          "macro_f1": 0.7230769230769231,
+          "accepted_f1": 0.8461538461538461,
+          "invalid_f1": 0.6,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.7142857142857143,
+              "recall": 0.5172413793103449,
+              "f1": 0.6,
+              "support": 29
+            },
+            "1_accepted": {
+              "precision": 0.7971014492753623,
+              "recall": 0.9016393442622951,
+              "f1": 0.8461538461538461,
+              "support": 61
+            }
+          },
+          "confusion_matrix": [
+            [
+              15,
+              14
+            ],
+            [
+              6,
+              55
+            ]
+          ],
+          "fold": 2,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 245,
+            "0": 114
+          },
+          "test_label_distribution": {
+            "1": 61,
+            "0": 29
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7444444444444445,
+          "macro_f1": 0.677519862906995,
+          "accepted_f1": 0.8244274809160306,
+          "invalid_f1": 0.5306122448979592,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.6190476190476191,
+              "recall": 0.4642857142857143,
+              "f1": 0.5306122448979592,
+              "support": 28
+            },
+            "1_accepted": {
+              "precision": 0.782608695652174,
+              "recall": 0.8709677419354839,
+              "f1": 0.8244274809160306,
+              "support": 62
+            }
+          },
+          "confusion_matrix": [
+            [
+              13,
+              15
+            ],
+            [
+              8,
+              54
+            ]
+          ],
+          "fold": 3,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 244,
+            "0": 115
+          },
+          "test_label_distribution": {
+            "1": 62,
+            "0": 28
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7888888888888889,
+          "macro_f1": 0.7097267017484298,
+          "accepted_f1": 0.8613138686131386,
+          "invalid_f1": 0.5581395348837209,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.8,
+              "recall": 0.42857142857142855,
+              "f1": 0.5581395348837209,
+              "support": 28
+            },
+            "1_accepted": {
+              "precision": 0.7866666666666666,
+              "recall": 0.9516129032258065,
+              "f1": 0.8613138686131386,
+              "support": 62
+            }
+          },
+          "confusion_matrix": [
+            [
+              12,
+              16
+            ],
+            [
+              3,
+              59
+            ]
+          ],
+          "fold": 4,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 244,
+            "0": 115
+          },
+          "test_label_distribution": {
+            "1": 62,
+            "0": 28
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7640449438202247,
+          "macro_f1": 0.7114404817044928,
+          "accepted_f1": 0.8346456692913385,
+          "invalid_f1": 0.5882352941176471,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.75,
+              "recall": 0.4838709677419355,
+              "f1": 0.5882352941176471,
+              "support": 31
+            },
+            "1_accepted": {
+              "precision": 0.7681159420289855,
+              "recall": 0.9137931034482759,
+              "f1": 0.8346456692913385,
+              "support": 58
+            }
+          },
+          "confusion_matrix": [
+            [
+              15,
+              16
+            ],
+            [
+              5,
+              53
+            ]
+          ],
+          "fold": 5,
+          "train_size": 360,
+          "test_size": 89,
+          "train_label_distribution": {
+            "1": 248,
+            "0": 112
+          },
+          "test_label_distribution": {
+            "1": 58,
+            "0": 31
+          },
+          "article_key_overlap_train_test": 0
+        }
+      ],
+      "aggregate": {
+        "accuracy": {
+          "mean": 0.7728089887640449,
+          "std": 0.01886247000361289,
+          "min": 0.7444444444444445,
+          "max": 0.7888888888888889
+        },
+        "macro_f1": {
+          "mean": 0.7096415476867602,
+          "std": 0.019351162760519843,
+          "min": 0.677519862906995,
+          "max": 0.7264437689969605
+        },
+        "accepted_f1": {
+          "mean": 0.8447367444234422,
+          "std": 0.015370563083838235,
+          "min": 0.8244274809160306,
+          "max": 0.8613138686131386
+        },
+        "invalid_f1": {
+          "mean": 0.5745463509500782,
+          "std": 0.02951285268161421,
+          "min": 0.5306122448979592,
+          "max": 0.6
+        },
+        "invalid_precision": {
+          "mean": 0.7166666666666667,
+          "std": 0.06683651832199143,
+          "min": 0.6190476190476191,
+          "max": 0.8
+        },
+        "invalid_recall": {
+          "mean": 0.48249760168558836,
+          "std": 0.03790193813267387,
+          "min": 0.42857142857142855,
+          "max": 0.5185185185185185
+        },
+        "accepted_precision": {
+          "mean": 0.7897556935817805,
+          "std": 0.01720888256395518,
+          "min": 0.7681159420289855,
+          "max": 0.8142857142857143
+        },
+        "accepted_recall": {
+          "mean": 0.9085549995267532,
+          "std": 0.028967380760581377,
+          "min": 0.8709677419354839,
+          "max": 0.9516129032258065
+        }
+      }
+    },
+    "tfidf_char_linear_svm": {
+      "folds": [
+        {
+          "accuracy": 0.7777777777777778,
+          "macro_f1": 0.7159090909090909,
+          "accepted_f1": 0.8484848484848485,
+          "invalid_f1": 0.5833333333333334,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5185185185185185,
+              "f1": 0.5833333333333334,
+              "support": 27
+            },
+            "1_accepted": {
+              "precision": 0.8115942028985508,
+              "recall": 0.8888888888888888,
+              "f1": 0.8484848484848485,
+              "support": 63
+            }
+          },
+          "confusion_matrix": [
+            [
+              14,
+              13
+            ],
+            [
+              7,
+              56
+            ]
+          ],
+          "fold": 1,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 243,
+            "0": 116
+          },
+          "test_label_distribution": {
+            "1": 63,
+            "0": 27
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7555555555555555,
+          "macro_f1": 0.6691176470588236,
+          "accepted_f1": 0.8382352941176471,
+          "invalid_f1": 0.5,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.7333333333333333,
+              "recall": 0.3793103448275862,
+              "f1": 0.5,
+              "support": 29
+            },
+            "1_accepted": {
+              "precision": 0.76,
+              "recall": 0.9344262295081968,
+              "f1": 0.8382352941176471,
+              "support": 61
+            }
+          },
+          "confusion_matrix": [
+            [
+              11,
+              18
+            ],
+            [
+              4,
+              57
+            ]
+          ],
+          "fold": 2,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 245,
+            "0": 114
+          },
+          "test_label_distribution": {
+            "1": 61,
+            "0": 29
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7111111111111111,
+          "macro_f1": 0.6306818181818181,
+          "accepted_f1": 0.803030303030303,
+          "invalid_f1": 0.4583333333333333,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.55,
+              "recall": 0.39285714285714285,
+              "f1": 0.4583333333333333,
+              "support": 28
+            },
+            "1_accepted": {
+              "precision": 0.7571428571428571,
+              "recall": 0.8548387096774194,
+              "f1": 0.803030303030303,
+              "support": 62
+            }
+          },
+          "confusion_matrix": [
+            [
+              11,
+              17
+            ],
+            [
+              9,
+              53
+            ]
+          ],
+          "fold": 3,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 244,
+            "0": 115
+          },
+          "test_label_distribution": {
+            "1": 62,
+            "0": 28
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7888888888888889,
+          "macro_f1": 0.7185185185185186,
+          "accepted_f1": 0.8592592592592593,
+          "invalid_f1": 0.5777777777777777,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.7647058823529411,
+              "recall": 0.4642857142857143,
+              "f1": 0.5777777777777777,
+              "support": 28
+            },
+            "1_accepted": {
+              "precision": 0.7945205479452054,
+              "recall": 0.9354838709677419,
+              "f1": 0.8592592592592593,
+              "support": 62
+            }
+          },
+          "confusion_matrix": [
+            [
+              13,
+              15
+            ],
+            [
+              4,
+              58
+            ]
+          ],
+          "fold": 4,
+          "train_size": 359,
+          "test_size": 90,
+          "train_label_distribution": {
+            "1": 244,
+            "0": 115
+          },
+          "test_label_distribution": {
+            "1": 62,
+            "0": 28
+          },
+          "article_key_overlap_train_test": 0
+        },
+        {
+          "accuracy": 0.7415730337078652,
+          "macro_f1": 0.6579782790309106,
+          "accepted_f1": 0.8270676691729323,
+          "invalid_f1": 0.4888888888888889,
+          "labels": {
+            "0_invalid": {
+              "precision": 0.7857142857142857,
+              "recall": 0.3548387096774194,
+              "f1": 0.4888888888888889,
+              "support": 31
+            },
+            "1_accepted": {
+              "precision": 0.7333333333333333,
+              "recall": 0.9482758620689655,
+              "f1": 0.8270676691729323,
+              "support": 58
+            }
+          },
+          "confusion_matrix": [
+            [
+              11,
+              20
+            ],
+            [
+              3,
+              55
+            ]
+          ],
+          "fold": 5,
+          "train_size": 360,
+          "test_size": 89,
+          "train_label_distribution": {
+            "1": 248,
+            "0": 112
+          },
+          "test_label_distribution": {
+            "1": 58,
+            "0": 31
+          },
+          "article_key_overlap_train_test": 0
+        }
+      ],
+      "aggregate": {
+        "accuracy": {
+          "mean": 0.7549812734082397,
+          "std": 0.03071688798884806,
+          "min": 0.7111111111111111,
+          "max": 0.7888888888888889
+        },
+        "macro_f1": {
+          "mean": 0.6784410707398324,
+          "std": 0.03806787567758343,
+          "min": 0.6306818181818181,
+          "max": 0.7185185185185186
+        },
+        "accepted_f1": {
+          "mean": 0.8352154748129981,
+          "std": 0.021596129145081074,
+          "min": 0.803030303030303,
+          "max": 0.8592592592592593
+        },
+        "invalid_f1": {
+          "mean": 0.5216666666666666,
+          "std": 0.05591550062260503,
+          "min": 0.4583333333333333,
+          "max": 0.5833333333333334
+        },
+        "invalid_precision": {
+          "mean": 0.7000840336134454,
+          "std": 0.095205011554755,
+          "min": 0.55,
+          "max": 0.7857142857142857
+        },
+        "invalid_recall": {
+          "mean": 0.42196208603327623,
+          "std": 0.06761333182387338,
+          "min": 0.3548387096774194,
+          "max": 0.5185185185185185
+        },
+        "accepted_precision": {
+          "mean": 0.7713181882639893,
+          "std": 0.03135441536568558,
+          "min": 0.7333333333333333,
+          "max": 0.8115942028985508
+        },
+        "accepted_recall": {
+          "mean": 0.9123827122222424,
+          "std": 0.03927839851412505,
+          "min": 0.8548387096774194,
+          "max": 0.9482758620689655
+        }
+      }
+    }
+  },
+  "notes": [
+    "5-fold cross-validation is grouped by article_key to reduce leakage.",
+    "Accepted means valid_definition or partial.",
+    "Invalid means manually rejected candidate.",
+    "Report mean and standard deviation across folds."
+  ]
+}

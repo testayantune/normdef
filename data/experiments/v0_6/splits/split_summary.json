@@ -1,0 +1,546 @@
+{
+  "version": "v0.6",
+  "random_seed": 2026,
+  "split_ratios_requested": {
+    "train": 0.7,
+    "dev": 0.15,
+    "test": 0.15
+  },
+  "tasks": {
+    "term_definition_extraction": {
+      "task": "term_definition_extraction",
+      "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\normdef_v0_6_term_definition_extraction.jsonl",
+      "output_dir": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\term_definition_extraction",
+      "counts": {
+        "total": 693,
+        "train": 509,
+        "dev": 88,
+        "test": 96
+      },
+      "ratios": {
+        "train": 0.7344877344877345,
+        "dev": 0.12698412698412698,
+        "test": 0.13852813852813853
+      },
+      "stratification_distribution": {
+        "all": {
+          "colon_definition": 255,
+          "sentend_de": 201,
+          "on_entend_par": 176,
+          "defini_comme": 52,
+          "qualification": 7,
+          "other": 2
+        },
+        "train": {
+          "colon_definition": 164,
+          "on_entend_par": 156,
+          "sentend_de": 144,
+          "defini_comme": 38,
+          "qualification": 5,
+          "other": 2
+        },
+        "dev": {
+          "colon_definition": 42,
+          "sentend_de": 28,
+          "on_entend_par": 10,
+          "defini_comme": 7,
+          "qualification": 1
+        },
+        "test": {
+          "colon_definition": 49,
+          "sentend_de": 29,
+          "on_entend_par": 10,
+          "defini_comme": 7,
+          "qualification": 1
+        }
+      },
+      "binary_label_distribution": null,
+      "pattern_distribution": {
+        "all": {
+          "terme_colon_definition": 255,
+          "s'entend de": 201,
+          "on entend par": 134,
+          "défini comme": 51,
+          "au sens du présent chapitre, on entend par": 21,
+          "pour l'application du présent code, on entend par": 19,
+          "est considéré comme": 5,
+          "sont considérés comme": 2,
+          "sont qualifiés de ... lorsqu'ils": 1,
+          "aux fins du présent article, on entend par": 1,
+          "pour l'application du présent titre, on entend par": 1,
+          "définis comme": 1,
+          "sont qualifiés de": 1
+        },
+        "train": {
+          "terme_colon_definition": 164,
+          "s'entend de": 144,
+          "on entend par": 114,
+          "défini comme": 37,
+          "au sens du présent chapitre, on entend par": 21,
+          "pour l'application du présent code, on entend par": 19,
+          "est considéré comme": 4,
+          "sont qualifiés de ... lorsqu'ils": 1,
+          "aux fins du présent article, on entend par": 1,
+          "sont qualifiés de": 1,
+          "pour l'application du présent titre, on entend par": 1,
+          "définis comme": 1,
+          "sont considérés comme": 1
+        },
+        "dev": {
+          "terme_colon_definition": 42,
+          "s'entend de": 28,
+          "on entend par": 10,
+          "défini comme": 7,
+          "est considéré comme": 1
+        },
+        "test": {
+          "terme_colon_definition": 49,
+          "s'entend de": 29,
+          "on entend par": 10,
+          "défini comme": 7,
+          "sont considérés comme": 1
+        }
+      },
+      "source_code_distribution_top20": {
+        "all": {
+          "Code des impositions sur les biens et services": 66,
+          "Code général des impôts": 66,
+          "Code de la santé publique": 61,
+          "Code des postes et des communications électroniques": 59,
+          "Code de l'environnement": 51,
+          "Code rural (nouveau)": 42,
+          "Code monétaire et financier": 39,
+          "Code de la construction et de l'habitation": 38,
+          "Code de la consommation": 34,
+          "Code des transports": 30,
+          "Code de l'énergie": 24,
+          "Code du travail": 19,
+          "Code général des impôts, annexe III": 18,
+          "Code de la défense": 13,
+          "Code de la sécurité intérieure": 13,
+          "Code général des collectivités territoriales": 11,
+          "Code du cinéma et de l'image animée": 10,
+          "Code de commerce": 9,
+          "Code général des impôts, annexe II": 8,
+          "Code de la sécurité sociale": 8
+        },
+        "train": {
+          "Code des postes et des communications électroniques": 59,
+          "Code général des impôts": 55,
+          "Code de la santé publique": 44,
+          "Code de l'environnement": 43,
+          "Code des impositions sur les biens et services": 38,
+          "Code de la consommation": 32,
+          "Code rural (nouveau)": 28,
+          "Code de la construction et de l'habitation": 25,
+          "Code du travail": 18,
+          "Code des transports": 17,
+          "Code de l'énergie": 17,
+          "Code général des impôts, annexe III": 15,
+          "Code de la sécurité intérieure": 12,
+          "Code général des collectivités territoriales": 10,
+          "Code de commerce": 9,
+          "Code du cinéma et de l'image animée": 7,
+          "Code de la défense": 6,
+          "Code des relations entre le public et l'administration": 6,
+          "Code du sport": 5,
+          "Code de la propriété intellectuelle": 5
+        },
+        "dev": {
+          "Code de la santé publique": 12,
+          "Code des impositions sur les biens et services": 11,
+          "Code rural (nouveau)": 11,
+          "Code de la construction et de l'habitation": 8,
+          "Code monétaire et financier": 6,
+          "Code de la défense": 6,
+          "Code de l'énergie": 6,
+          "Code des transports": 5,
+          "Code général des impôts": 4,
+          "Code de l'environnement": 4,
+          "Code du cinéma et de l'image animée": 2,
+          "Code de la propriété intellectuelle": 2,
+          "Code de la sécurité sociale": 2,
+          "Code des douanes": 1,
+          "Code de procédure civile": 1,
+          "Code du service national": 1,
+          "Code général des impôts, annexe III": 1,
+          "Code du travail": 1,
+          "Code de l'éducation": 1,
+          "Code de la voirie routière": 1
+        },
+        "test": {
+          "Code monétaire et financier": 28,
+          "Code des impositions sur les biens et services": 17,
+          "Code des transports": 8,
+          "Code général des impôts": 7,
+          "Code de la santé publique": 5,
+          "Code de la construction et de l'habitation": 5,
+          "Code de l'environnement": 4,
+          "Code de la route": 3,
+          "Code rural (nouveau)": 3,
+          "Code général des impôts, annexe II": 2,
+          "Code général des impôts, annexe III": 2,
+          "Code de la consommation": 2,
+          "Code de l'énergie": 1,
+          "Code général de la fonction publique": 1,
+          "Code de l'action sociale et des familles": 1,
+          "Code des assurances": 1,
+          "Code de la sécurité intérieure": 1,
+          "Code général des collectivités territoriales": 1,
+          "Code de la sécurité sociale": 1,
+          "Code de la défense": 1
+        }
+      },
+      "article_overlap": {
+        "train_dev_overlap": 0,
+        "train_test_overlap": 0,
+        "dev_test_overlap": 0
+      }
+    },
+    "candidate_validation": {
+      "task": "candidate_validation",
+      "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\normdef_v0_6_candidate_validation.jsonl",
+      "output_dir": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\candidate_validation",
+      "counts": {
+        "total": 449,
+        "train": 322,
+        "dev": 79,
+        "test": 48
+      },
+      "ratios": {
+        "train": 0.7171492204899778,
+        "dev": 0.1759465478841871,
+        "test": 0.10690423162583519
+      },
+      "stratification_distribution": {
+        "all": {
+          "1": 306,
+          "0": 143
+        },
+        "train": {
+          "1": 230,
+          "0": 92
+        },
+        "dev": {
+          "1": 40,
+          "0": 39
+        },
+        "test": {
+          "1": 36,
+          "0": 12
+        }
+      },
+      "binary_label_distribution": {
+        "all": {
+          "1": 306,
+          "0": 143
+        },
+        "train": {
+          "1": 230,
+          "0": 92
+        },
+        "dev": {
+          "1": 40,
+          "0": 39
+        },
+        "test": {
+          "1": 36,
+          "0": 12
+        }
+      },
+      "pattern_distribution": {
+        "all": {
+          "terme_colon_definition": 253,
+          "s'entend de": 104,
+          "défini comme": 44,
+          "on entend par": 34,
+          "est considéré comme": 10,
+          "sont considérés comme": 4
+        },
+        "train": {
+          "terme_colon_definition": 187,
+          "s'entend de": 76,
+          "on entend par": 24,
+          "défini comme": 23,
+          "est considéré comme": 9,
+          "sont considérés comme": 3
+        },
+        "dev": {
+          "terme_colon_definition": 47,
+          "s'entend de": 15,
+          "défini comme": 10,
+          "on entend par": 6,
+          "sont considérés comme": 1
+        },
+        "test": {
+          "terme_colon_definition": 19,
+          "s'entend de": 13,
+          "défini comme": 11,
+          "on entend par": 4,
+          "est considéré comme": 1
+        }
+      },
+      "source_code_distribution_top20": {
+        "all": {
+          "Code général des impôts": 37,
+          "Code de la construction et de l'habitation": 36,
+          "Code rural (nouveau)": 34,
+          "Code de la santé publique": 31,
+          "Code des impositions sur les biens et services": 26,
+          "Code de l'entrée et du séjour des étrangers et du droit d'asile": 24,
+          "Code des transports": 21,
+          "Code de commerce": 20,
+          "Code du travail": 19,
+          "Code de l'énergie": 15,
+          "Code monétaire et financier": 15,
+          "Code de l'environnement": 13,
+          "Code général des impôts, annexe III": 12,
+          "Code de la consommation": 11,
+          "Code de la sécurité intérieure": 11,
+          "Code de la sécurité sociale": 11,
+          "Code de l'action sociale et des familles": 10,
+          "Code de la route": 10,
+          "Code général des collectivités territoriales": 10,
+          "Code de la défense": 9
+        },
+        "train": {
+          "Code de la construction et de l'habitation": 34,
+          "Code général des impôts": 28,
+          "Code rural (nouveau)": 27,
+          "Code de la santé publique": 23,
+          "Code des transports": 19,
+          "Code des impositions sur les biens et services": 17,
+          "Code du travail": 17,
+          "Code de commerce": 14,
+          "Code monétaire et financier": 11,
+          "Code de la consommation": 10,
+          "Code de l'énergie": 10,
+          "Code de la route": 10,
+          "Code de l'environnement": 8,
+          "Code général des collectivités territoriales": 8,
+          "Code de la sécurité sociale": 8,
+          "Code de l'action sociale et des familles": 8,
+          "Code général des impôts, annexe III": 7,
+          "Code de la sécurité intérieure": 6,
+          "Code général de la propriété des personnes publiques": 5,
+          "Code des postes et des communications électroniques": 5
+        },
+        "dev": {
+          "Code de l'entrée et du séjour des étrangers et du droit d'asile": 24,
+          "Code de la santé publique": 7,
+          "Code général des impôts, annexe III": 5,
+          "Code des impositions sur les biens et services": 5,
+          "Code de l'énergie": 5,
+          "Code général des impôts": 4,
+          "Code de l'environnement": 4,
+          "Code monétaire et financier": 4,
+          "Code rural (nouveau)": 3,
+          "Code des pensions civiles et militaires de retraite": 2,
+          "Code des transports": 2,
+          "Code de la construction et de l'habitation": 2,
+          "Code des communes de la Nouvelle-Calédonie": 2,
+          "Code des relations entre le public et l'administration": 1,
+          "Code de l'action sociale et des familles": 1,
+          "Code de commerce": 1,
+          "Code de l'artisanat": 1,
+          "Code forestier (nouveau)": 1,
+          "Code de la justice pénale des mineurs": 1,
+          "Code du sport": 1
+        },
+        "test": {
+          "Code général des impôts": 5,
+          "Code de commerce": 5,
+          "Code de la sécurité intérieure": 5,
+          "Code des impositions sur les biens et services": 4,
+          "Code rural (nouveau)": 4,
+          "Code de la défense": 4,
+          "Code de procédure civile": 3,
+          "Code de l'éducation": 2,
+          "Code de la sécurité sociale": 2,
+          "Code de la propriété intellectuelle": 2,
+          "Code de l'action sociale et des familles": 1,
+          "Code général de la fonction publique": 1,
+          "unknown": 1,
+          "Code des relations entre le public et l'administration": 1,
+          "Code général des collectivités territoriales": 1,
+          "Code de l'environnement": 1,
+          "Code de la consommation": 1,
+          "Code du travail": 1,
+          "Code de la santé publique": 1,
+          "Code général des impôts, annexe IV": 1
+        }
+      },
+      "article_overlap": {
+        "train_dev_overlap": 0,
+        "train_test_overlap": 0,
+        "dev_test_overlap": 0
+      }
+    },
+    "article_classification": {
+      "task": "article_classification",
+      "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\normdef_v0_6_article_classification.jsonl",
+      "output_dir": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\experiments\\v0_6\\splits\\article_classification",
+      "counts": {
+        "total": 798,
+        "train": 558,
+        "dev": 119,
+        "test": 121
+      },
+      "ratios": {
+        "train": 0.6992481203007519,
+        "dev": 0.14912280701754385,
+        "test": 0.15162907268170425
+      },
+      "stratification_distribution": {
+        "all": {
+          "0": 435,
+          "1": 363
+        },
+        "train": {
+          "0": 304,
+          "1": 254
+        },
+        "dev": {
+          "0": 65,
+          "1": 54
+        },
+        "test": {
+          "0": 66,
+          "1": 55
+        }
+      },
+      "binary_label_distribution": {
+        "all": {
+          "0": 435,
+          "1": 363
+        },
+        "train": {
+          "0": 304,
+          "1": 254
+        },
+        "dev": {
+          "0": 65,
+          "1": 54
+        },
+        "test": {
+          "0": 66,
+          "1": 55
+        }
+      },
+      "pattern_distribution": {
+        "all": {
+          "unknown": 798
+        },
+        "train": {
+          "unknown": 558
+        },
+        "dev": {
+          "unknown": 119
+        },
+        "test": {
+          "unknown": 121
+        }
+      },
+      "source_code_distribution_top20": {
+        "all": {
+          "Code général des impôts": 236,
+          "Code de commerce": 158,
+          "Code des impositions sur les biens et services": 56,
+          "Code général des impôts, annexe II": 53,
+          "Code général des impôts, annexe IV": 27,
+          "Code de la consommation": 25,
+          "Code rural (nouveau)": 22,
+          "Code de l'environnement": 21,
+          "Code de la santé publique": 18,
+          "Code des transports": 18,
+          "Code général des impôts, annexe III": 17,
+          "Code de l'énergie": 13,
+          "Code du travail": 12,
+          "Code de la construction et de l'habitation": 11,
+          "Code monétaire et financier": 11,
+          "Code de la défense": 8,
+          "Code du cinéma et de l'image animée": 8,
+          "Code de la sécurité sociale": 8,
+          "Code de la propriété intellectuelle": 7,
+          "Code général des collectivités territoriales": 6
+        },
+        "train": {
+          "Code général des impôts": 168,
+          "Code de commerce": 114,
+          "Code général des impôts, annexe II": 33,
+          "Code des impositions sur les biens et services": 30,
+          "Code de la consommation": 20,
+          "Code général des impôts, annexe IV": 19,
+          "Code de l'environnement": 18,
+          "Code rural (nouveau)": 17,
+          "Code général des impôts, annexe III": 13,
+          "Code de la santé publique": 12,
+          "Code des transports": 10,
+          "Code de la construction et de l'habitation": 10,
+          "Code de l'énergie": 10,
+          "Code du travail": 9,
+          "Code du cinéma et de l'image animée": 7,
+          "Code monétaire et financier": 6,
+          "Code de la défense": 6,
+          "Code général des collectivités territoriales": 5,
+          "Code de la sécurité sociale": 4,
+          "Code de l'action sociale et des familles": 3
+        },
+        "dev": {
+          "Code général des impôts": 38,
+          "Code de commerce": 20,
+          "Code des impositions sur les biens et services": 13,
+          "Code général des impôts, annexe II": 10,
+          "Code des transports": 5,
+          "Code de la propriété intellectuelle": 4,
+          "Code de la santé publique": 4,
+          "Code général des impôts, annexe IV": 3,
+          "Code de la sécurité sociale": 3,
+          "Code monétaire et financier": 3,
+          "Code de l'environnement": 2,
+          "Code des assurances": 1,
+          "Code général des impôts, annexe III": 1,
+          "Code de l'énergie": 1,
+          "Code de la route": 1,
+          "Code de la construction et de l'habitation": 1,
+          "Code de la défense": 1,
+          "Code rural (nouveau)": 1,
+          "Code de la sécurité intérieure": 1,
+          "Code général des collectivités territoriales": 1
+        },
+        "test": {
+          "Code général des impôts": 30,
+          "Code de commerce": 24,
+          "Code des impositions sur les biens et services": 13,
+          "Code général des impôts, annexe II": 10,
+          "Code général des impôts, annexe IV": 5,
+          "Code de la consommation": 5,
+          "Code rural (nouveau)": 4,
+          "Code des transports": 3,
+          "Code général des impôts, annexe III": 3,
+          "Code de la sécurité intérieure": 2,
+          "Code du travail": 2,
+          "unknown": 2,
+          "Code monétaire et financier": 2,
+          "Code des postes et des communications électroniques": 2,
+          "Code de la santé publique": 2,
+          "Code de l'énergie": 2,
+          "Code de la sécurité sociale": 1,
+          "Code de l'action sociale et des familles": 1,
+          "Code de l'organisation judiciaire": 1,
+          "Code de l'éducation": 1
+        }
+      },
+      "article_overlap": {
+        "train_dev_overlap": 0,
+        "train_test_overlap": 0,
+        "dev_test_overlap": 0
+      }
+    }
+  },
+  "notes": [
+    "Splits are stratified approximately.",
+    "Rows are grouped by article_key when possible to reduce leakage.",
+    "Pattern classification is not a main task; pattern distributions are reported for split quality control."
+  ]
+}

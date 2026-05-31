@@ -1,0 +1,43 @@
+{
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\annotation\\annotation_batch_v0_2_reviewed.jsonl",
+  "output_gold": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\annotation\\normdef_fr_v0_2_gold_from_review.jsonl",
+  "output_rejected": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\NormDef-FR\\normdef_automation\\data\\annotation\\normdef_fr_v0_2_rejected_from_review.jsonl",
+  "total_rows_read": 43,
+  "total_reviewed_rows": 43,
+  "gold_rows": 13,
+  "rejected_rows": 30,
+  "skipped_or_missing_label_rows": 0,
+  "manual_label_distribution": {
+    "valid_definition": 8,
+    "partial": 5,
+    "invalid": 30
+  },
+  "precision_valid_plus_partial": 0.3023255813953488,
+  "precision_valid_only": 0.18604651162790697,
+  "gold_pattern_distribution": {
+    "s'entend de": 5,
+    "terme_colon_definition": 7,
+    "on entend par": 1
+  },
+  "gold_definition_type_distribution": {
+    "explicit": 10,
+    "explicit_subitem": 3
+  },
+  "gold_source_code_distribution": {
+    "Code de l'organisation judiciaire": 1,
+    "Code des impositions sur les biens et services": 1,
+    "Code de commerce": 4,
+    "Code de la voirie routière": 1,
+    "Code général des impôts, annexe I": 1,
+    "Code général de la propriété des personnes publiques": 3,
+    "Code général des impôts": 1,
+    "Code des postes et des communications électroniques": 1
+  },
+  "rejected_pattern_distribution": {
+    "terme_colon_definition": 30
+  },
+  "rejected_source_code_distribution": {
+    "Code de l'entrée et du séjour des étrangers et du droit d'asile": 24,
+    "Code de l'action sociale et des familles": 6
+  }
+}

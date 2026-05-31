@@ -1,0 +1,87 @@
+#!/usr/bin/env python3
+"""
+Filter current articles from articles_clean.jsonl.
+
+Input:
+    data/processed/articles_clean.jsonl
+
+Output:
+    data/processed/articles_current.jsonl
+
+Usage:
+    python scripts/filter_current_articles.py
+"""
+
+from __future__ import annotations
+
+import json
+from collections import Counter
+from pathlib import Path
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+INPUT_FILE = PROJECT_ROOT / "data" / "processed" / "articles_clean.jsonl"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "processed" / "articles_current.jsonl"
+
+
+def main() -> int:
+    if not INPUT_FILE.exists():
+        raise FileNotFoundError(f"Input file not found: {INPUT_FILE}")
+
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    total = 0
+    kept = 0
+    skipped = 0
+    status_counter = Counter()
+    code_counter = Counter()
+
+    with INPUT_FILE.open("r", encoding="utf-8") as inp, OUTPUT_FILE.open(
+        "w", encoding="utf-8"
+    ) as out:
+        for line_number, line in enumerate(inp, start=1):
+            line = line.strip()
+            if not line:
+                continue
+
+            total += 1
+
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError as exc:
+                print(f"[WARN] Line {line_number}: invalid JSON: {exc}")
+                skipped += 1
+                continue
+
+            etat = row.get("etat")
+            date_fin = row.get("date_fin")
+
+            status_counter[str(etat)] += 1
+
+            if etat == "VIGUEUR" and date_fin == "2999-01-01":
+                out.write(json.dumps(row, ensure_ascii=False) + "\n")
+                kept += 1
+                code_counter[row.get("source_code", "unknown")] += 1
+            else:
+                skipped += 1
+
+    print(f"Input: {INPUT_FILE}")
+    print(f"Output: {OUTPUT_FILE}")
+    print(f"Total rows read: {total}")
+    print(f"Rows kept: {kept}")
+    print(f"Rows skipped: {skipped}")
+
+    print("\nStatus distribution:")
+    for status, count in status_counter.most_common():
+        print(f"- {status}: {count}")
+
+    print("\nTop source codes kept:")
+    for code, count in code_counter.most_common(20):
+        print(f"- {code}: {count}")
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
